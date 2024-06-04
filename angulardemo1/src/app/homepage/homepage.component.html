@@ -1,0 +1,31 @@
+<p>homepage works!</p>
+
+
+<h2 style="text-align: center;"><b>Product Details</b></h2>
+<table border="1" class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let p of Product" >
+
+            <td>
+                {{p.id}}
+            </td>
+            <td>
+                {{p.name}}
+            </td>
+            <td>
+                {{p.price}}
+            </td>
+   
+            <td></td>
+            </tr>
+        </tbody>
+    
+</table>

@@ -1,0 +1,30 @@
+<p>login works!</p><br/>
+
+<h2 style="text-align: center;">
+    Login here
+</h2>
+<br/>
+
+
+<!-- UserName :
+<input type="text" value="UserName" [(ngModel)] = "UserName"/><br/><br/>
+Password :
+<input type="password" value ="Password" [(ngModel)] = "Password"/><br/><br/>
+
+<button type="submit" value="Login"  (click)="getData()">Login</button> -->
+
+<div id="div1"> 
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">UserName</label>
+      <input type="text" [(ngModel)] = "UserName" class="form-control" id="UserName" aria-describedby="emailHelp">
+     
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" [(ngModel)]="Password" class="form-control" id="Password">
+    </div>
+    
+    <button type="submit" (click)="getData()" class="btn btn-primary">Login</button>
+  </form>
+  </div>
